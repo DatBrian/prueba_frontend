@@ -1,0 +1,33 @@
+{
+	"money": {
+		"baseCapital": 1000000
+	},
+	"users": [
+		{
+			"id": 1,
+			"name": "John Doe",
+			"email": "john@example.com",
+			"idNumber": "1234567890"
+		}
+	],
+	"loan": [
+		{
+			"id": 1,
+			"userId": 1,
+			"requestedAmount": 50000,
+			"paidValue": 5000,
+			"dueDate": "30-08-2025",
+			"status": "approved",
+			"fullyPaid": false
+		}
+	],
+	"payments": [
+		{
+			"id": 1,
+			"loanId": 1,
+			"userId": 1,
+			"amount": 5000,
+			"date": "25-07-2025"
+		}
+	]
+}
