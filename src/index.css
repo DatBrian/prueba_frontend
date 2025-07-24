@@ -4,10 +4,13 @@
 	font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
 	line-height: 1.5;
 	font-weight: 400;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 
 	color-scheme: light dark;
-	color: rgba(255, 255, 255, 0.87);
-	background-color: #154399;
+	color: rgba(46, 38, 38, 0.87);
+	background-color: #ffffff;
 
 	font-synthesis: none;
 	text-rendering: optimizeLegibility;
@@ -17,11 +20,7 @@
 
 a {
 	font-weight: 500;
-	color: #646cff;
 	text-decoration: inherit;
-}
-a:hover {
-	color: #535bf2;
 }
 
 body {

@@ -1,9 +1,23 @@
+import "./HomePage.css";
+
 const HomePage = () => {
 	return (
-		<div>
-			<h1>Welcome to the Home Page</h1>
-			<p>This is the main page of our application.</p>
-		</div>
+		<>
+			<section className="flex h-screen w-screen">
+				<div></div>
+				<div
+					id="homeImg"
+					className="hidden lg:block h-full overflow-hidden"
+				>
+					<img
+						src="src/assets/images/pruebam.png"
+						alt="Auth background"
+						className="w-full h-full object-cover"
+					/>
+				</div>
+			</section>
+			;
+		</>
 	);
 };
 
