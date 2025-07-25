@@ -2,13 +2,20 @@ import { createBrowserRouter } from "react-router";
 // import HomeLayout from "../layouts/HomeLayout/HomeLayout";
 import ErrorPage from "../pages/Error/ErrorPage";
 import Root from "./Root";
-import AuthPage from "../pages/Auth/AuthPage";
 import { PrivateRoute } from "./PrivateRoute";
+import AuthLayout from "../layouts/AuthLayout/AuthLayout";
+import RegisterForm from "../components/Forms/RegisterForm/RegisterForm";
 
 const router = createBrowserRouter([
 	{
 		path: "/auth",
-		element: <AuthPage />,
+		element: <AuthLayout />,
+		children:[
+			{
+				path: "register",
+				element: <RegisterForm/>
+			}
+		]
 	},
 	{
 		index: true,

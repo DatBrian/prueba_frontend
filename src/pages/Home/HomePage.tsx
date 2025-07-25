@@ -1,5 +1,6 @@
 
 import HomeNavBar from "../../components/Forms/ui/navBar/homeNavBar/HomeNavBar";
+import Link from "../../components/Forms/ui/navBar/Link/Link";
 import "./HomePage.css";
 
 const HomePage = () => {
@@ -25,7 +26,9 @@ const HomePage = () => {
 						</div>
 					</div>
 					<div className="flex justify-center" >
-						<button id="getStartedButton" className="bold italic">GET STARTED</button>
+						<Link id="getStartedButton" to={"/auth/register"}>
+							GET STARTED
+						</Link>
 					</div>
 				</div>
 			</section>

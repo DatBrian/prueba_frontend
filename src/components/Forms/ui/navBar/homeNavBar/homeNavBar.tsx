@@ -1,3 +1,4 @@
+import Link from "../Link/Link";
 import "./HomeNavBar.css"
 
 const HomeNavBar = () => {
@@ -17,7 +18,7 @@ const HomeNavBar = () => {
 				</div>
 				</div>
 				<div className="px-10" id="loginButton">
-					<button >Login</button>
+					<Link to={"/auth"} >Login</Link>
 				</div>
 			</div>
 		</nav>

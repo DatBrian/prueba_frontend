@@ -1,10 +1,11 @@
+import "./RegisterForm.css";
 import { Button, Input, Label } from "../ui";
 
 const RegisterForm = () => {
 	return (
-		<div className="bg-blue-400 rounded-xl flex min-h-full  flex-col justify-center px-6 py-12 lg:px-8">
+		<div id="registerForm" className="rounded-xl flex min-h-full flex-col justify-center py-12 lg:px-8">
 			<div className="sm:mx-auto sm:w-full sm:max-w-sm">
-				<h2 className="mt-10 text-center text-2xl/9 font-bold tracking-tight text-gray-900">
+				<h2 className="text-center text-2xl/9 font-bold tracking-tight text-gray-900">
 					Sign in to your account
 				</h2>
 			</div>
@@ -26,14 +27,6 @@ const RegisterForm = () => {
 					<div>
 						<div className="flex items-center justify-between">
 							<Label htmlFor="password">Password</Label>
-							<div className="text-sm">
-								<a
-									href="#"
-									className="font-semibold text-gray-700 hover:text-black"
-								>
-									Forgot password?
-								</a>
-							</div>
 						</div>
 						<div className="mt-2">
 							<Input
@@ -51,15 +44,6 @@ const RegisterForm = () => {
 					</div>
 				</form>
 
-				<p className="mt-10 text-center | text-sm/6 text-gray-700">
-					U dont have an account ?
-					<a
-						href="#"
-						className=" font-semibold text-indigo-600 hover:text-indigo-500"
-					>
-						. Click here to register!
-					</a>
-				</p>
 			</div>
 		</div>
 	);
