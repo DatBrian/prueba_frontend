@@ -1,3 +1,11 @@
 #homeImg {
-	width: 50%;
+	width: 60%;
+}
+
+#homeText{
+	width: 40%;
+}
+
+#percent{
+	color: #a66cff;
 }

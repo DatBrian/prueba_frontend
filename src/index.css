@@ -1,17 +1,21 @@
 @import "tailwindcss";
 
+@font-face {
+	font-family: "Colvetica";
+	src: url("src\assets\fonts\Coolvetica Rg It.otf");
+}
+
 :root {
-	font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+	font-family: Coolvetica, Avenir, Helvetica, Arial, sans-serif;
 	line-height: 1.5;
 	font-weight: 400;
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-
+	overflow: hidden;
 	color-scheme: light dark;
 	color: rgba(46, 38, 38, 0.87);
 	background-color: #ffffff;
-
 	font-synthesis: none;
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
@@ -19,8 +23,10 @@
 }
 
 a {
-	font-weight: 500;
-	text-decoration: inherit;
+	font-weight: bold;
+	font-size: large;
+	transition: all ease-in .3s;
+	font-style: bold;
 }
 
 body {
@@ -43,13 +49,10 @@ button {
 	font-size: 1em;
 	font-weight: 500;
 	font-family: inherit;
-	background-color: #1a1a1a;
 	cursor: pointer;
 	transition: border-color 0.25s;
 }
-button:hover {
-	border-color: #646cff;
-}
+
 button:focus,
 button:focus-visible {
 	outline: 4px auto -webkit-focus-ring-color;
@@ -61,9 +64,13 @@ button:focus-visible {
 		background-color: #ffffff;
 	}
 	a:hover {
-		color: #747bff;
+		color: #a66cff;
 	}
 	button {
-		background-color: #f9f9f9;
+		background-color: #cff501;
+		transition: all ease-in .2s;
+	}
+	button:hover{
+		background-color: #a66cff;
 	}
 }
